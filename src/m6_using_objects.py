@@ -36,16 +36,18 @@ def two_circles():
     #    (by calling this function).
     # ------------------------------------------------------------------
 
-    window = rg.RoseWindow(500, 500)
-    center1 = rg.Point(0, 0)
-    circle1 = rg.Circle(center1, 75)
-    circle1.fill_color = 'blue'
+    window = rg.RoseWindow
+    center_point = rg.Point(200,200)
+    circle1 = rg.Circle(center_point, 69)
+    circle1.fill_color = "red"
     circle1.attach_to(window)
 
-    center2
-    window.close_on_mouse_click()
-    window.render(1)
+    center_point = rg.Point(400, 400)
+    circle2 = rg.Circle(center_point, 29)
+    circle2.attach_to(window)
 
+    window.render(1)
+    window.close_on_mouse_click()
 
 
 def circle_and_rectangle():
